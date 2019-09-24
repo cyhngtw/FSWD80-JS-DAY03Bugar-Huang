@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Avarage Grade</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script type="text/javascript">
+
+	var grades = [76,85,65,93,81];
+
+	var total = 0;
+	for (var i = 0; i <grades.length; i++) {
+		total += grades[i];
+
+	}
+
+   var avar = total / grades.length;
+
+   document.write(avar);
+
+ if (avar < 60) {
+ 	document.write("F");
+ } else if ( avar <70) {
+ 	document.write("D");
+ } else if ( avar < 80) {
+ 	document.write("C");
+ } else if ( avar < 90) {
+ 	document.write("B"); 
+ } else {
+ 	document.write("A");
+ }
+	</script>
+</body>
+</html>
