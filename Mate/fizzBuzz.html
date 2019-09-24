@@ -8,15 +8,11 @@
 </head>
 <body>
 	<script type="text/javascript">
-	var number = new Array();
-
-	for (i=0; i<100; i++) {
-		number.push(i);
-	}
+var number = new Array();
 
 function fizzbuzz() {
-	for (i=0; i<=number.length; i++) {
-		if (i%15 == 0) {
+	for (i=0; i<=100; i++) {
+		if (i%3 == 0 && i%5 == 0) {
 			document.write("FizzBuzz" + "<br>");
 		} else if (i%3 == 0) {
 			document.write("Fizz" + "<br>");
